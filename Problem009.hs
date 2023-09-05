@@ -5,8 +5,4 @@
 --Find the product abc
 
 pythagoras :: Int
-pythagoras = triplet[(a,b,c) | a <- [1..999], b <- [1..999], c <- [1..999], a^2 + b^2 == c^2]
-
-triplet :: [(Int,Int,Int)] -> Int
-triplet ((a,b,c):xs) | a + b + c == 1000 = a*b*c
-                 | otherwise = triplet xs
+pythagoras = head[(a*b*c) | a <- [1..999], b <- [1..999], c <- [1..999], a^2 + b^2 == c^2, a+b+c ==1000]
