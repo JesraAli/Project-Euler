@@ -7,11 +7,3 @@ series n = reverse (take 10((reverseInt(sum(zipWith (^) [1..n] [1..n])))))
 
 reverseInt :: Integer->[Char]
 reverseInt = reverse.show
-
--- getDigits :: [Char]->[Char]
--- getDigits = take 10
-
-
--- getDigits :: [Char]->[Char]
--- getDigits = read.reverse.take 10.show
-
